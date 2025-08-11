@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - Latte</title>
+  <style>
+    body { font-family: sans-serif; background-color: #fffaf4; padding: 2rem; color: #3e2f1c; }
+    h1 { color: #6f4e37; }
+    .cart-box { background: white; padding: 2rem; border-radius: 10px; max-width: 400px; margin: auto; box-shadow: 0 0 12px rgba(0,0,0,0.1); }
+    .price { font-size: 1.2rem; margin: 1rem 0; }
+    .btn { background-color: #6f4e37; color: white; padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer; }
+    .btn:hover { background-color: #8b5e3c; }
+  </style>
+</head>
+<body>
+  <div class="cart-box">
+    <h1>Latte</h1>
+    <p>Rich espresso with steamed milk.</p>
+    <p class="price">Price: $4.50</p>
+    <form action="thankyou.jsp" method="post">
+      <input type="hidden" name="item" value="Latte">
+      <input type="hidden" name="price" value="4.50">
+      <button class="btn">Confirm Purchase</button>
+    </form>
+  </div>
+</body>
+</html>

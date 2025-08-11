@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freshly Roasted Beans - CafeDelight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #6d4c41; /* original coffee shop brown */
+      --secondary: #d7ccc8;
+      --background: #fffaf6; /* light warm cream */
+      --accent: #ffab91;
+      --light: #ffecb3;
+      --text: #3e2723;
+      --font-main: 'Montserrat', sans-serif;
+      --font-logo: 'Great Vibes', cursive;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    nav {
+      background: var(--primary);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-family: var(--font-logo);
+      font-size: 2rem;
+      color: #ffecb3;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    header {
+      position: relative;
+      background: url('fresh.webp') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-logo);
+      font-size: 3.5rem;
+      text-align: center;
+      padding: 0 1rem;
+      color: var(--light);
+}
+
+
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-family: var(--font-logo);
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 0.25rem;
+      text-align: left;
+    }
+
+    .two-col {
+      display: flex;
+      gap: 3rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .text-block {
+      flex: 1 1 48%;
+      text-align: justify;
+    }
+
+    ul {
+      margin-top: 0.75rem;
+      padding-left: 1.25rem;
+      color: var(--text);
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: var(--light);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 320px;
+      flex: 1 1 280px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 6px 15px rgba(109,76,65,0.15);
+    }
+
+    .card h3 {
+      font-family: var(--font-logo);
+      color: var(--accent);
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .two-col {
+        flex-direction: column;
+      }
+      .text-block {
+        flex: 1 1 100%;
+      }
+      header {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">CafeDelight</div>
+    <ul>
+      <li><a href="Coffee Shop.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    Freshly Roasted Beans
+  </header>
+
+  <main>
+    <section class="two-col">
+      <div class="text-block">
+        <h2>Our Beans, Our Pride</h2>
+        <p>
+          At CafeDelight, we source the finest high-grown Arabica and Robusta beans from Sri Lanka’s lush central highlands — regions like Nuwara Eliya, Uva, and Kandy known for their unique microclimates that produce rich, aromatic coffee. Our beans are handpicked by experienced farmers who care deeply about quality and sustainability.
+        </p>
+        <p>
+          The art of roasting is a delicate balance that we have perfected. Using traditional small-batch roasters, we ensure every bean is roasted to highlight its unique flavor notes — from bright citrus and floral undertones to deep chocolate and nutty finishes.
+        </p>
+      </div>
+      <div class="text-block">
+        <h2>Why Choose Our Coffee?</h2>
+        <ul>
+          <li><strong>Unique Terroir:</strong> The island’s volcanic soil and cool highland climate impart distinct flavors that you won’t find anywhere else.</li>
+          <li><strong>Sustainability:</strong> Most of our suppliers practice shade-grown coffee farming, preserving native forests and wildlife.</li>
+          <li><strong>Small-Scale Artisans:</strong> Supporting local farmers and cooperatives helps uplift communities across the island.</li>
+          <li><strong>Freshness Guaranteed:</strong> Roasted weekly to ensure every cup bursts with freshness and aroma.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="text-block">
+        <h2>Our Roasting Process</h2>
+        <p>
+          Roasting coffee is where science meets artistry. Our expert roasters monitor temperature and timing carefully, allowing the beans to develop complexity without bitterness. We employ a medium roast profile for most blends to balance acidity and body, perfect for espresso, filter, or cold brew preparations.
+        </p>
+        <p>
+          After roasting, beans are quickly cooled and sealed to lock in their flavors. We then package them in eco-friendly bags with one-way valves to let carbon dioxide escape without letting air in, preserving freshness for you.
+        </p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <img src="batch.png" alt="Small Batch Roasting" />
+          <h3>Small-Batch Roasting</h3>
+          <p>Each batch is roasted with care to maintain consistency and unlock complex flavor profiles unique to Sri Lankan coffee.</p>
+        </div>
+        <div class="card">
+          <img src="ethical.jpg" alt="Ethical Sourcing" />
+          <h3>Ethical Sourcing</h3>
+          <p>We partner with local farmers and cooperatives committed to sustainable and fair trade practices that protect the environment and community welfare.</p>
+        </div>
+        <div class="card">
+          <img src="flavorful.webp" alt="Flavorful Experience" />
+          <h3>Flavorful Experience</h3>
+          <p>From the first sip to the last drop, our roasted beans deliver a rich sensory experience — bright, balanced, and deeply satisfying.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 CafeDelight | Proudly Serving Sri Lankan Coffee Heritage
+  </footer>
+</body>
+</html>

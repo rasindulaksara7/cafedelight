@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CafeDelight - Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #5d4037;
+      --secondary: #a1887f;
+      --light-bg: #fffaf6;
+      --accent: #d7ccc8;
+      --text: #3e2723;
+      --highlight: #ffccbc;
+      --font-main: 'Montserrat', sans-serif;
+      --font-logo: 'Great Vibes', cursive;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-main);
+      background: url('coffee.webp') no-repeat center center/cover;
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: var(--primary);
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: var(--font-logo);
+      font-size: 2rem;
+      color: #ffecb3;
+    }
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family: var(--font-logo);
+      color: var(--primary);
+      font-size: 3rem;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .contact-wrapper {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact-info,
+    .contact-form {
+      background: white;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      flex: 1 1 320px;
+      max-width: 420px;
+    }
+    .contact-info h2,
+    .contact-form h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      color: var(--text);
+    }
+    .contact-info a {
+      color: var(--highlight);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .contact-info a:hover {
+      color: #ffab91;
+      text-decoration: underline;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    label {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px 15px;
+      border: 1.8px solid var(--accent);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: var(--font-main);
+      resize: vertical;
+      min-height: 45px;
+      transition: border-color 0.3s;
+    }
+    textarea {
+      min-height: 110px;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+    }
+    button[type="submit"] {
+      background: var(--highlight);
+      color: var(--text);
+      border: none;
+      padding: 14px 0;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+    button[type="submit"]:hover {
+      background: #ffab91;
+    }
+    @media (max-width: 700px) {
+      .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-info,
+      .contact-form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CafeDelight</div>
+    <nav>
+      <ul>
+        <li><a href="coffee shop.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="login.html">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <div class="contact-wrapper">
+      <section class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Address:</strong><br />746 Galle Rd,<br />Colombo 00400, Sri Lanka</p>
+        <p><strong>Phone:</strong><br /><a href="tel:+94112345678">0112 590 520</a></p>
+        <p><strong>Email:</strong><br /><a href="mailto:support@cafedelight.com">support@cafedelight.com</a></p>
+        <p>We’d love to hear from you! Whether you have questions about our menu, feedback, or just want to say hi, send us a message below.</p>
+      </section>
+
+      <section>
+        <!-- For demonstration, form action is a thank-you.html page -->
+        <form action="thank you.html" method="post" class="contact-form">
+          <h2>Send Us a Message</h2>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

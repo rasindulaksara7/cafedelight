@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - CafeDelight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #5d4037;
+      --secondary: #a1887f;
+      --light-bg: #fffaf6;
+      --accent: #d7ccc8;
+      --text: #3e2723;
+      --highlight: #ffccbc;
+      --font-main: 'Montserrat', sans-serif;
+      --font-logo: 'Great Vibes', cursive;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-main);
+      background: url('coffee.webp') no-repeat center center/cover;
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 0;
+    }
+    header {
+      background: var(--primary);
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
+    .logo {
+      font-family: var(--font-logo);
+      font-size: 2rem;
+      color: #ffecb3;
+    }
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      z-index: 1;
+      /* Add a semi-transparent background behind the content for readability */
+      background-color: rgba(255, 250, 246, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      padding: 30px 35px;
+    }
+    h1 {
+      font-family: var(--font-logo);
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .about-content {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    .about-content p {
+      margin-bottom: 20px;
+    }
+    .founders {
+      margin-top: 35px;
+    }
+    .founders h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    .founder-list {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .founder {
+      flex: 1 1 250px;
+      text-align: center;
+      background: var(--accent);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .founder img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid var(--primary);
+    }
+    .founder h3 {
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-size: 1.2rem;
+    }
+    .founder p {
+      font-size: 0.95rem;
+      color: #4a3926;
+    }
+    @media (max-width: 600px) {
+      .founder-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .founder {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CafeDelight</div>
+    <nav>
+      <ul>
+        <li><a href="Coffee Shop.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="login.html">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>About Us</h1>
+    <section class="about-content">
+      <p>At CafeDelight, we believe a perfect cup of coffee is more than just a drink — it’s an experience. Founded in 2010, our passion for exceptional coffee, cozy ambiance, and fresh baked goods has made us a beloved destination for locals and visitors alike.</p>
+      <p>We carefully source our beans from sustainable farms, roast them fresh every day, and craft each cup with love and precision. Our cozy café is designed to be your home away from home — whether you're catching up with friends, working on a project, or simply relaxing.</p>
+      <p>Beyond coffee, our bakery delights with homemade pastries, croissants, and sweets baked fresh daily. We’re committed to quality, community, and creating moments of warmth and connection for everyone who walks through our doors.</p>
+
+      <div class="founders">
+        <h2>Meet Our Founders</h2>
+        <div class="founder-list">
+          <div class="founder">
+            <img src="luffy.jpg" alt="Founder Luffy" />
+            <h3>Monkey.D.Luffy</h3>
+            <p>Co-founder & Head Barista<br>Luffy's love for coffee culture fuels our passion for quality and innovation.</p>
+          </div>
+          <div class="founder">
+            <img src="sanji.jpg" alt="Founder John Smith" />
+            <h3>Vinsmoke Sanji</h3>
+            <p>Co-founder & Bakery Chef<br>Sanji's baking skills bring the freshest and most delicious treats to your table.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

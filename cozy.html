@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cozy Atmosphere | CafeDelight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4e342e;
+      --accent: #d7ccc8;
+      --light: #fefaf6;
+      --text: #3e2723;
+      --highlight: #ffccbc;
+      --font-main: 'Montserrat', sans-serif;
+      --font-logo: 'Great Vibes', cursive;
+    }
+
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .logo {
+      font-family: var(--font-logo);
+      font-size: 2.2rem;
+      color: #fff8e1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    .hero {
+      height: 90vh;
+      background: url('cozy.webp') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fffaf0;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-logo);
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 60px 40px;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .info-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    .info-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .scroll-gallery {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 40px 20px;
+      background: #f1ece7;
+    }
+
+    .scroll-gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 14px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .scroll-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">CafeDelight</div>
+    <nav>
+      <ul>
+        <li><a href="Coffee Shop.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Welcome to Comfort</h1>
+      <p>Immerse yourself in our cozy atmosphere — where every corner is crafted for warmth, connection, and the aroma of freshly brewed dreams.</p>
+    </div>
+  </section>
+
+  <section class="info-grid">
+    <div class="info-card">
+      <h2>Warm Interiors</h2>
+      <p>Earthy tones, wooden textures, and dim lighting come together to create a homely ambiance that calms the mind and inspires the soul.</p>
+    </div>
+    <div class="info-card">
+      <h2>Chill Corners</h2>
+      <p>Whether you're working remotely, reading a novel, or catching up with friends, our cozy nooks offer the perfect space for peace and productivity.</p>
+    </div>
+    <div class="info-card">
+      <h2>Seasonal Vibes</h2>
+      <p>Every season brings new décor, drinks, and fragrances. From cinnamon winters to floral springs — we celebrate warmth all year long.</p>
+    </div>
+  </section>
+
+  <div class="scroll-gallery">
+    <img src="place.webp" alt="Interior 1">
+    <img src="rainy.jpg" alt="Interior 2">
+    <img src="design.jpg" alt="Interior 3">
+    <img src="vibes.jpg" alt="Interior 4">
+    <img src="elegant.jpg" alt="Interior 5">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CafeDelight. Crafted with comfort. Brewed with love.</p>
+  </footer>
+
+</body>
+</html>

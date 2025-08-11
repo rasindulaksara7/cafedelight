@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freshly Baked Goods - CafeDelight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6d4c41;
+      --secondary: #d7ccc8;
+      --light-bg: #fffaf6;
+      --accent: #fbe9e7;
+      --highlight: #ffab91;
+      --text: #3e2723;
+      --font-main: 'Montserrat', sans-serif;
+      --font-logo: 'Great Vibes', cursive;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--light-bg);
+      color: var(--text);
+    }
+
+    nav {
+      background: var(--primary);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-family: var(--font-logo);
+      font-size: 2rem;
+      color: #ffecb3;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--highlight);
+    }
+
+    header {
+      background: url('falling.gif') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff3e0;
+    }
+
+    header h1 {
+      font-family: var(--font-logo);
+      font-size: 3.5rem;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      font-family: var(--font-logo);
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--text);
+    }
+
+    .two-col {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .text-left {
+      order: 1;
+      flex: 1 1 60%;
+    }
+
+    .text-right {
+      order: 2;
+      flex: 1 1 35%;
+      text-align: right;
+    }
+
+    .alt {
+      flex-direction: row-reverse;
+    }
+
+    .bakes-showcase {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .bake-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.4s ease;
+    }
+
+    .bake-card:hover {
+      transform: scale(1.05);
+    }
+
+    .bake-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      animation: popIn 1s ease forwards;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .bake-card-content {
+      padding: 20px;
+    }
+
+    .bake-card-content h3 {
+      font-family: var(--font-logo);
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: var(--highlight);
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .two-col {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .text-right {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">CafeDelight</div>
+    <ul>
+      <li><a href="Coffee Shop.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Freshly Baked Goods</h1>
+  </header>
+
+  <section class="two-col">
+    <div class="text-left">
+      <h2>Warm, Wholesome & Homemade</h2>
+      <p>
+        Our journey into the world of baked delights began with a deep passion for artisanal craftsmanship.
+        From soft, buttery croissants to crusty sourdough loaves, each item is hand-crafted with care,
+        using only the finest ingredients. We believe in the magic of freshly baked goods that not only nourish but comfort the soul.
+      </p>
+    </div>
+  </section>
+
+  <section class="bakes-showcase">
+    <div class="bake-card">
+      <img src="croissant.gif" alt="Classic Croissant">
+      <div class="bake-card-content">
+        <h3>Classic Croissant</h3>
+        <p>Flaky, golden perfection with a rich, buttery taste that melts in your mouth.</p>
+      </div>
+    </div>
+    <div class="bake-card">
+      <img src="sourdough.gif" alt="Artisan Sourdough">
+      <div class="bake-card-content">
+        <h3>Artisan Sourdough</h3>
+        <p>Slow-fermented to develop complex flavor and a delightfully chewy crust.</p>
+      </div>
+    </div>
+    <div class="bake-card">
+      <img src="muffin.gif" alt="Choco Chip Muffin">
+      <div class="bake-card-content">
+        <h3>Choco Chip Muffin</h3>
+        <p>Moist, fluffy, and filled with decadent chocolate chips in every bite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-col alt">
+    <div class="text-left">
+      <h2>Our Baking Philosophy</h2>
+      <p>
+        At CafeDelight, we believe that baking is not just a craft—it's a passion woven into every loaf and pastry. Our philosophy centers around warmth, authenticity, and a love for wholesome, handcrafted goods that nourish both body and soul.<br/>
+<br/>
+      <ul>
+      <li>We use only natural, locally sourced ingredients free from preservatives.</li><br/>
+
+      <li>Our recipes honor traditional baking methods while embracing modern creativity.</li><br/>
+
+      <li>Every item is baked fresh daily in small batches for optimal quality.</li><br/>
+
+      <li>We focus on sustainability in both sourcing and packaging.</li><br/>
+
+      <li>Customer feedback helps us evolve and refine our offerings continuously.</li>
+      </ul>
+      </p>
+    </div>
+  </section>
+
+  <section class="two-col">
+    <div class="text-left">
+      <h2>Meet Our Bakers</h2>
+      <p>
+        Behind every golden crust and warm aroma is a team of passionate artisans who pour their heart into every batch. At CafeDelight, our bakers aren’t just skilled—they’re storytellers, crafting delicious experiences one bake at a time.<br/>
+		<br/>
+       <ul>
+       <li>Amara Silva – Head Baker with 15+ years of experience in French patisserie, known for her signature croissants and dedication to quality.</li><br/>
+
+       <li>Jason Perera – Sourdough specialist who blends science and instinct to create rustic loaves with character and depth.</li><br/>
+
+       <li>Nimali Fernando – Dessert innovator who crafts stunning seasonal treats with unique flavor pairings and artistic presentation.</li><br/>
+
+       <li>Tharindu Jayasena – Early riser and master of consistency, ensuring each bun, loaf, and muffin is baked to perfection every morning.</li><br/>
+	   </ul>
+      </p>
+    </div>
+  </section>
+
+  <section class="two-col alt">
+    <div class="text-left">
+      <h2>Customer Favorites</h2>
+      <p>
+        Our guests can’t get enough of these beloved picks, hand-crafted for both comfort and bold flavor:<br/>
+      <br/>
+<li>Chai Latte – Spiced just right with cinnamon, cardamom, and clove for a warm and cozy finish.</li><br/>
+
+<li>Chocolate Danish – Flaky layers wrapped around rich chocolate, freshly baked every morning.</li><br/>
+
+<li>Peanut Butter Protein – A hearty, nutty treat packed with natural energy — perfect for on-the-go snacking.</li><br/>
+
+<li>Ham and Cheese – A savory delight with gooey cheese and smoky ham in a golden crust.</li><br/>
+
+<li>Mocha – The perfect balance of espresso and chocolate, both in beverages and infused treats.</li><br/>
+      </p>
+    </div>
+  </section>
+
+  <section class="two-col rtl">
+  <div class="text-left">
+    <h2>Sustainability Promise</h2>
+    <p>
+      At CafeDelight, we are committed to reducing our environmental footprint and fostering a greener future. Every decision we make — from ingredients to packaging — supports our planet-first mindset.
+    </p><br/>
+    <ul>
+      <li>Using locally sourced, organic ingredients to reduce transportation emissions.</li><br/>
+      <li>Offering biodegradable packaging and encouraging reusable container use.</li><br/>
+      <li>Minimizing food waste through batch planning and donation partnerships.</li><br/>
+      <li>Reducing water and energy usage with modern, efficient equipment.</li><br/>
+      <li>Supporting sustainable farming and fair-trade suppliers.</li><br/>
+    </ul>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 CafeDelight. Crafted with comfort. Brewed with love.</p>
+  </footer>
+</body>
+</html>
