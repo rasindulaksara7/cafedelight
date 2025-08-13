@@ -163,6 +163,82 @@
         max-width: 100%;
       }
     }
+
+    /* Footer Styles */
+    footer {
+      background: #3e2723;
+      font-family: var(--font-main);
+      color: #fff;
+    }
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start; 
+      padding: 40px 20px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+    }
+    .footer-logo {
+      flex: 0 0 150px; /* fixed width for logo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+	  margin-top: 20px;
+    }
+    .footer-logo img {
+      width: 100%;
+      height: auto;
+    }
+    .footer-column {
+      flex: 1;
+	  mid-width:180px;
+      margin: 10px 0;
+    }
+    .footer-column h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #e65100; /* darker orange */
+    }
+    .footer-column p,
+    .footer-column a {
+      color: #fff;
+      margin-bottom: 8px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-column a:hover {
+      color: #ffab91;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding: 15px 20px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.9rem;
+      background: #2c1a14;
+      color: #fff;
+    }
+    .footer-bottom a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: color 0.3s;
+    }
+    .footer-bottom a:hover {
+      color: #ffab91;
+    }
+
+    @media (max-width: 900px) {
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .footer-logo {
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -174,7 +250,7 @@
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about us.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-		<li><a href="login.html">Log In</a></li>
+        <li><a href="login.html">Log In</a></li>
       </ul>
     </nav>
   </header>
@@ -191,7 +267,6 @@
       </section>
 
       <section>
-        <!-- For demonstration, form action is a thank-you.html page -->
         <form action="thank you.html" method="post" class="contact-form">
           <h2>Send Us a Message</h2>
           <label for="name">Your Name</label>
@@ -208,6 +283,57 @@
       </section>
     </div>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="delight.avif" alt="Coffee Store Logo">
+      </div>
+      <div class="footer-column">
+        <h3>Information</h3>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Delivery Information</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Terms &amp; Conditions</a></p>
+        <p><a href="#">Order History</a></p>
+        <p><a href="#">Newsletter</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>My Account</h3>
+        <p><a href="#">Contact Us</a></p>
+        <p><a href="#">Returns</a></p>
+        <p><a href="#">Site Map</a></p>
+        <p><a href="#">My Account</a></p>
+        <p><a href="#">Wish List</a></p>
+        <p><a href="#">Affiliates</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Extras</h3>
+        <p><a href="#">Brands</a></p>
+        <p><a href="#">Gift Vouchers</a></p>
+        <p><a href="#">Affiliates</a></p>
+        <p><a href="#">Specials</a></p>
+        <p><a href="#">Newsletter</a></p>
+        <p><a href="#">Returns</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>746 Galle Rd, Colombo 00400, Sri Lanka</p>
+        <p>0112 590 520</p>
+        <p><a href="mailto:support@cafedelight.com">support@cafedelight.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#">Affiliates</a> |
+      <a href="#">Gift Vouchers</a> |
+      <a href="#">Brands</a> |
+      <a href="#">Returns</a> |
+      <a href="#">Site Map</a> |
+      <a href="#">Contact Us</a>
+      <br><br>
+      Powered By CafeDelight Your Store © 2025
+    </div>
+  </footer>
 </body>
 </html>
-
