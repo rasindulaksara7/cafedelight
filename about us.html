@@ -65,7 +65,6 @@
       margin: 40px auto;
       padding: 0 20px;
       z-index: 1;
-      /* Add a semi-transparent background behind the content for readability */
       background-color: rgba(255, 250, 246, 0.9);
       border-radius: 12px;
       box-shadow: 0 6px 16px rgba(0,0,0,0.12);
@@ -133,6 +132,63 @@
         max-width: 100%;
       }
     }
+
+    /* Footer Styles */
+    footer {
+      background-color: #3b1f14;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    footer .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      border-bottom: 1px solid #5d4037;
+      padding-bottom: 20px;
+    }
+    footer .footer-logo {
+      flex: 1 1 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    footer .footer-logo img {
+      width: 140px;
+    }
+    footer .footer-column {
+      flex: 1 1 200px;
+      margin-bottom: 20px;
+    }
+    footer .footer-column h3 {
+      color: #ff7043;
+      margin-bottom: 15px;
+    }
+    footer .footer-column p,
+    footer .footer-column a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer .footer-column a:hover {
+      text-decoration: underline;
+    }
+    footer .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    footer .footer-bottom a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    footer .footer-bottom a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -144,7 +200,7 @@
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about us.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-		<li><a href="login.html">Log In</a></li>
+        <li><a href="login.html">Log In</a></li>
       </ul>
     </nav>
   </header>
@@ -173,5 +229,56 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Cafe Delight Logo" />
+      </div>
+      <div class="footer-column">
+        <h3>Information</h3>
+        <a href="#">About Us</a><br>
+        <a href="#">Delivery Information</a><br>
+        <a href="#">Privacy Policy</a><br>
+        <a href="#">Terms & Conditions</a><br>
+        <a href="#">Order History</a><br>
+        <a href="#">Newsletter</a>
+      </div>
+      <div class="footer-column">
+        <h3>My Account</h3>
+        <a href="#">Contact Us</a><br>
+        <a href="#">Returns</a><br>
+        <a href="#">Site Map</a><br>
+        <a href="#">My Account</a><br>
+        <a href="#">Wish List</a><br>
+        <a href="#">Affiliates</a>
+      </div>
+      <div class="footer-column">
+        <h3>Extras</h3>
+        <a href="#">Brands</a><br>
+        <a href="#">Gift Vouchers</a><br>
+        <a href="#">Affiliates</a><br>
+        <a href="#">Specials</a><br>
+        <a href="#">Newsletter</a><br>
+        <a href="#">Returns</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>746 Galle Rd, Colombo 00400, Sri Lanka</p>
+        <p>0112 590 520</p>
+        <p>support@cafedelight.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#">Affiliates</a> |
+      <a href="#">Gift Vouchers</a> |
+      <a href="#">Brands</a> |
+      <a href="#">Returns</a> |
+      <a href="#">Site Map</a> |
+      <a href="#">Contact Us</a>
+      <p>Powered By CafeDelight Your Store © 2025</p>
+    </div>
+  </footer>
 </body>
 </html>
